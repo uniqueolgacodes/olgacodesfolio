@@ -1,6 +1,6 @@
-import profileImgLarge from '~/assets/profile-large.jpg';
+import profileImgLarge from '~/assets/olga.png';
 import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
-import profileImg from '~/assets/profile.jpg';
+import profileImg from '~/assets/olga.png';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
@@ -21,16 +21,12 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      I’m Unique Olga, a web developer based in Nigeria. I build modern, responsive web applications with a strong focus on clean UI, performance, and user experience. My work spans frontend development, interactive interfaces, and thoughtful visual design. Find nerdy details on my{' '}
+      <Link href="https://www.qwilr.com">Github</Link>. Being comfortable with both design and code allows me to turn ideas into functional products quickly and efficiently—from concept to deployment. If you’re curious about the tools and technologies I use, you can explore them on my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      Outside of work, I enjoy experimenting with new technologies, refining my craft, and building {' '}
+      <Link href="/projects/volkihar-knight">personal projects</Link>. I’m always open to collaborating or discussing new ideas, so feel free to reach out.
     </Text>
   </Fragment>
 );

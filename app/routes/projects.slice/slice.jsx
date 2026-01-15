@@ -1,15 +1,15 @@
 import sliceAnnotationLarge from '~/assets/slice-annotation-large.png';
 import sliceAnnotationPlaceholder from '~/assets/slice-annotation-placeholder.png';
 import sliceAnnotation from '~/assets/slice-annotation.png';
-import sliceAppLarge from '~/assets/slice-app-large.jpg';
-import sliceAppPlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceApp from '~/assets/slice-app.jpg';
-import sliceBackgroundBarLarge from '~/assets/slice-background-bar-large.jpg';
-import sliceBackgroundBarPlaceholder from '~/assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from '~/assets/slice-background-bar.jpg';
-import sliceBackgroundLarge from '~/assets/slice-background-large.jpg';
+import sliceAppLarge from '~/assets/tsagnew.png';
+import sliceAppPlaceholder from '~/assets/tsagnew.png';
+import sliceApp from '~/assets/tsagnew.png';
+import sliceBackgroundBarLarge from '~/assets/tsagoback.png';
+import sliceBackgroundBarPlaceholder from '~/assets/tsagoback.png';
+import sliceBackgroundBar from '~/assets/tsagoback.png';
+import sliceBackgroundLarge from '~/assets/tsagoback.png';
 import sliceBackgroundPlaceholder from '~/assets/slice-background-placeholder.jpg';
-import sliceBackground from '~/assets/slice-background.jpg';
+import sliceBackground from '~/assets/tsagoback.png';
 import sliceIrlPlaceholder from '~/assets/slice-irl-placeholder.jpg';
 import sliceIrl from '~/assets/slice-irl.jpg';
 import sliceSidebarAnnotationsLarge from '~/assets/slice-sidebar-annotations-large.png';
@@ -18,9 +18,9 @@ import sliceSidebarAnnotations from '~/assets/slice-sidebar-annotations.png';
 import sliceSidebarLayersLarge from '~/assets/slice-sidebar-layers-large.png';
 import sliceSidebarLayersPlaceholder from '~/assets/slice-sidebar-layers-placeholder.png';
 import sliceSidebarLayers from '~/assets/slice-sidebar-layers.png';
-import sliceSlidesLarge from '~/assets/slice-slides-large.jpg';
+import sliceSlidesLarge from '~/assets/slice-slides-large.png';
 import sliceSlidesPlaceholder from '~/assets/slice-slides-placeholder.jpg';
-import sliceSlides from '~/assets/slice-slides.jpg';
+import sliceSlides from '~/assets/slice-slides.png';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import {
@@ -40,9 +40,9 @@ import { media } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
 import styles from './slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'Powering A Non-Profit';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
+  'This project involved designing a website for a non-profit organization to enhance their online presence and outreach.';
 const roles = ['User Research', 'UX Design', 'Interface Design'];
 
 export const meta = () => {
@@ -64,7 +64,7 @@ export const Slice = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
+          url="https://examprephub.netlify.app"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -82,17 +82,11 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
+              <ProjectSectionHeading>Digital Impact, Real Change</ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+                A well-built web app empowers an NGO to reach more people, streamline operations, and turn support into measurable impact faster and at scale.
               </ProjectSectionText>
-              <ProjectSectionText>
-                Our solution was to allow users to be invited to a layer, where they can
-                see others’ annotations and make their own.
-              </ProjectSectionText>
+              
             </div>
             <div className={styles.sidebarImages}>
               <Image
@@ -119,14 +113,9 @@ export const Slice = () => {
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>Working on a payment platform</ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+                Integrated payment platforms make it easy for users to donate or make purchases securely, ensuring fast transactions, transparency, and uninterrupted support for the mission.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -139,7 +128,7 @@ export const Slice = () => {
             />
           </ProjectSectionContent>
         </ProjectSection>
-        <ProjectSection padding="top">
+        {/* <ProjectSection padding="top">
           <ProjectSectionContent className={styles.grid}>
             <div className={styles.gridImage}>
               <div className={styles.gridBackground}>
@@ -175,26 +164,22 @@ export const Slice = () => {
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+                RThe project delivered a reliable, scalable web platform that enhances user engagement, simplifies operations, and supports sustainable growth through modern design and secure integrations.
               </ProjectSectionText>
             </ProjectTextRow>
-            <Image
+            {/* <Image
               src={sliceIrl}
               width={940}
               height={500}
               placeholder={sliceIrlPlaceholder}
               alt="Students at the University of New South Wales using the new collaborative annotation features"
-            />
+            /> */}
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>
