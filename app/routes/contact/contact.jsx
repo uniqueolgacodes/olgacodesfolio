@@ -29,6 +29,7 @@ export const meta = () => {
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
 const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
+const DESTINATION_EMAIL = 'dukorunique@gmail.com';
 
 export async function action({ context, request }) {
   const ses = new SESClient({
@@ -73,7 +74,7 @@ export async function action({ context, request }) {
   await ses.send(
     new SendEmailCommand({
       Destination: {
-        ToAddresses: [context.cloudflare.env.EMAIL],
+        ToAddresses: [DESTINATION_EMAIL],
       },
       Message: {
         Body: {
