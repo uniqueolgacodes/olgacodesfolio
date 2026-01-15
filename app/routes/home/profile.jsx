@@ -26,7 +26,7 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       Outside of work, I enjoy experimenting with new technologies, refining my craft, and building {' '}
-      <Link href="/projects/volkihar-knight">personal projects</Link>. I’m always open to collaborating or discussing new ideas, so feel free to reach out.
+      <Link href="/projects/smart-sparrow">personal projects</Link>. I’m always open to collaborating or discussing new ideas, so feel free to reach out.
     </Text>
   </Fragment>
 );

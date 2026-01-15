@@ -506,7 +506,7 @@ The primary goals of the project were to reduce friction in school communication
               <ProjectSectionText>
                 Ultimately the project was successful and the prototype
                 platform was Acquired by Dominion University{' '}
-                <Link href="https://www.prnewswire.com/news-releases/pearson-acquires-interactive-learning-technology-from-smart-sparrow-300987673.html">
+                <Link href="https://www.dominionuniversity.edu.ng">
                   #Preview Link#
                 </Link>{' '}
                 to become a foundation for their next generation learning platform.
