@@ -30,6 +30,19 @@ function getRawPath(event) {
 }
 
 export default async function netlifyHandler(event, context) {
+  if (!event.headers) {
+    event = { ...event, headers: {} };
+  }
+
+  if (!event.multiValueHeaders) {
+    const multiValueHeaders = {};
+    for (const [key, value] of Object.entries(event.headers)) {
+      if (value === undefined || value === null) continue;
+      multiValueHeaders[key] = Array.isArray(value) ? value : [String(value)];
+    }
+    event = { ...event, multiValueHeaders };
+  }
+
   if (!event.rawUrl) {
     const host =
       event.headers?.host || event.headers?.['x-forwarded-host'] || 'localhost';
