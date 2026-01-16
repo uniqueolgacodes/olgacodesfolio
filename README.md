@@ -29,10 +29,10 @@ npm run dev:storybook
 
 ## Deployment
 
-I've set up the site using Cloudflare for hosting. Deploy the site to Cloudflare Pages:
+The site is set up for Netlify. Connect the repo in Netlify and use the default build:
 
 ```bash
-npm run deploy
+npm run build
 ```
 
 ## Permissions

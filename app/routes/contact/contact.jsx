@@ -14,7 +14,7 @@ import { useRef } from 'react';
 import { cssProps, msToNum, numToMs } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
 import { Form, useActionData, useNavigation } from '@remix-run/react';
-import { json } from '@remix-run/cloudflare';
+import { json } from '@remix-run/node';
 import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 import styles from './contact.module.css';
 
@@ -31,12 +31,12 @@ const MAX_MESSAGE_LENGTH = 4096;
 const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
 const DESTINATION_EMAIL = 'dukorunique@gmail.com';
 
-export async function action({ context, request }) {
+export async function action({ request }) {
   const ses = new SESClient({
     region: 'us-east-1',
     credentials: {
-      accessKeyId: context.cloudflare.env.AWS_ACCESS_KEY_ID,
-      secretAccessKey: context.cloudflare.env.AWS_SECRET_ACCESS_KEY,
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
     },
   });
 
@@ -86,7 +86,7 @@ export async function action({ context, request }) {
           Data: `Portfolio message from ${email}`,
         },
       },
-      Source: `Portfolio <${context.cloudflare.env.FROM_EMAIL}>`,
+      Source: `Portfolio <${process.env.FROM_EMAIL}>`,
       ReplyToAddresses: [email],
     })
   );
